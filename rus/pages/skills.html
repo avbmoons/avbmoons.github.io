@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Контакты</title>
+    <title>Компетенции</title>
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../styles/contacts/contacts.css">
+    <link rel="stylesheet" href="../styles/certificates/certificates.css" />
+    <link rel="stylesheet" href="../styles/skills/skills.css">
     <link rel="stylesheet" href="../styles/header/header.css">
     <link rel="stylesheet" href="../styles/footer/footer.css">
+    <script src="../js/skills.js"></script>
+    <script defer src="../js/skillslist.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -45,14 +48,14 @@
                   <div class="menu-burger">
                     <a class="menu-burger-img" href="#"
                       ><img
-                        src="../assets/icons/_icon-menu-burger.svg"
+                        src="../assets/icons/icon-menu-burger.svg"
                         alt="menu"
                     /></a>
                   </div>
                 </div>
                 <div class="menu-user-box">
                   <a class="menu-user-img" href="#"
-                    ><img src="../assets/icons/_icon-user.svg" alt="user"
+                    ><img src="../assets/icons/icon-user.svg" alt="user"
                   /></a>
                 </div>
               </div>
@@ -72,58 +75,62 @@
             <div class="header-bottom-right">
               <div class="lang-box">
                 <div class="lang-name-box">
-                  <a class="lang-ref" href="../../pages/contacts.html">Eng</a> 
+                  <a class="lang-ref " href="../../pages/skills.html">Eng</a> 
                 </div>
                 <div class="lang-name-box _end">
-                    <a class="lang-ref _active" href="contacts.html">Рус</a>  
+                    <a class="lang-ref _active" href="skills.html">Рус</a>  
                 </div>
             </div>
             </div>
           </section>
         </header>
         <main>
-          <section class="section-block _contacts" id="contacts-list">
+          <section class="section-block" id="skills">
             <div class="section-block-left"></div>
-            <div class="section-block-center contact">
+            <div class="section-block-center">
               <div class="section-block-heading">
-                <a class="section-heading" href="#">Мои контакты:</a>
-                <a class="section-link" href="../index.html" title="На Главную">&#9668;</a>
+                <a class="section-heading" href="#">Компетенции</a>
+                <a class="section-link" href="../index.html" title="На Главную..."
+                  >&#9668;</a
+                >
               </div>
+              <div class="section-block-content" id="skills-list">
+              </div>
+            </div>
+            <div class="section-block-right"></div>
+          </section>
+          <section class="section-block" id="certificates">
+            <div class="section-block-left"></div>
+            <div class="section-block-center">
+              <div class="section-block-heading"></div>
               <div class="section-block-content">
+                <script defer src="../js/certs.js"></script>
                 <div class="section-content-item">
-                  <div class="contacts-list">
-                    <div class="contact-item-block" id="github">
-                      <div class="contact-item-box">
-                        <div class="contact-item">                          
-                          <div class="contact-item-ones"><img class="contact-img" src="../assets/icons/socials/_github3.png" alt=""></div>
-                          <div class="contact-item-ones"><a class="contact-link" href="https://github.com/avbmoons" target="_blank">on GitHub</a></div>
-                        </div>                      
-                      </div>                      
+                  <div class="slide-box">
+                    <div class="slide">
+                      <div class="images" id="images"></div>
+                      <div class="buttons">
+                        <button
+                          onclick="toLeft('cert')"
+                          class="btt"
+                          id="bttLeft"
+                          title="Предыдущий"
+                        >
+                          &#8249;
+                        </button>
+                        <button
+                          onclick="toRight('cert')"
+                          class="btt"
+                          id="bttRight"
+                          title="Следующий"
+                        >
+                          &#8250;
+                        </button>
+                      </div>
                     </div>
-                    <div class="contact-item-block" id="email">
-                      <div class="contact-item-box">
-                        <div class="contact-item">                          
-                          <div class="contact-item-ones"><img class="contact-img" src="../assets/icons/socials/_email2.png" alt=""></div>
-                          <div class="contact-item-ones"><a class="contact-link" href="mailto:avb.moons@gmail.com?subject=From%20my%20site" target="_blank">on e-mail</a></div>
-                        </div>                      
-                      </div>                      
+                    <div class="point-box">
+                      <div class="point" id="point"><p id="point"></p></div>
                     </div>
-                    <div class="contact-item-block" id="telegram">
-                      <div class="contact-item-box">
-                        <div class="contact-item">                          
-                          <div class="contact-item-ones"><img class="contact-img" src="../assets/icons/socials/_telegram.png" alt=""></div>
-                          <div class="contact-item-ones"><a class="contact-link" href="https://t.me/avbmoons" target="_blank">on Telegram</a></div>
-                        </div>                      
-                      </div>                      
-                    </div>
-                    <div class="contact-item-block" id="whatsapp">
-                      <div class="contact-item-box">
-                        <div class="contact-item">                          
-                          <div class="contact-item-ones"><img class="contact-img" src="../assets/icons/socials/_whatsapp.png" alt=""></div>
-                          <div class="contact-item-ones"><a class="contact-link" href="https://wa.me/79161860002" target="_blank">on WhatsApp</a></div>
-                        </div>                      
-                      </div>                      
-                    </div>                    
                   </div>
                 </div>
               </div>
@@ -176,16 +183,16 @@
                 <div class="socials-links-box">
                     <div class="socials-links">
                         <div class="socials-link">
-                          <a href="mailto:avb.moons@gmail.com?subject=From%20my%20site" target="_blank" title="e-mail"><img class="socials-link-img" src="../assets/icons/socials/_email.png" alt=""></a>
+                          <a href="mailto:avb.moons@gmail.com?subject=From%20my%20site" target="_blank" title="e-mail"><img class="socials-link-img" src="../assets/icons/socials/email.png" alt=""></a>
                         </div>
                         <div class="socials-link">
-                            <a href="https://github.com/avbmoons" target="_blank" title="GitHub"><img class="socials-link-img" src="../assets/icons/socials/_github_black.png" alt=""></a>
+                            <a href="https://github.com/avbmoons" target="_blank" title="GitHub"><img class="socials-link-img" src="../assets/icons/socials/github_black.png" alt=""></a>
                         </div>
                         <div class="socials-link">
-                            <a href="https://t.me/avbmoons" target="_blank" title="Telegram"><img class="socials-link-img" src="../assets/icons/socials/_telegram_transp.png" alt=""></a>
+                            <a href="https://t.me/avbmoons" target="_blank" title="Telegram"><img class="socials-link-img" src="../assets/icons/socials/telegram_transp.png" alt=""></a>
                         </div>
                         <div class="socials-link">
-                            <a href="https://wa.me/79161860002" target="_blank" title="WhatsApp"><img class="socials-link-img" src="../assets/icons/socials/_whatsapp_transp.png" alt=""></a>
+                            <a href="https://wa.me/79161860002" target="_blank" title="WhatsApp"><img class="socials-link-img" src="../assets/icons/socials/whatsapp_transp.png" alt=""></a>
                         </div>
                     </div>
                 </div>
