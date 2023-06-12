@@ -1,0 +1,58 @@
+const progs = [
+  {
+    id: 1,
+    name: "site-medinfo-laravel",
+    image: "../assets/portfolio/img/porto-1.jpg",
+    ref: "https://github.com/avbmoons/site-medinfo-laravel",
+    text: "Server part for medical information searching site.<br>Contain of CMS and API for client interaction.<br> Also having the test db dump.<br> Laravel implementation within Docker container.",
+  },
+  {
+    id: 2,
+    name: "site-news-laravel",
+    image: "../assets/portfolio/img/porto-2.jpg",
+    ref: "https://github.com/avbmoons/site-news-laravel",
+    text: "Client and server parts for news-portal with parsing from specified sources.<br>Contain of news views including by news categories views, also CMS and user authentication block.<br>Laravel implementation within Docker container",
+  },
+  {
+    id: 3,
+    name: "chats-news-react",
+    image: "../assets/portfolio/img/porto-3.jpg",
+    ref: "https://github.com/avbmoons/chats-news-react",
+    text: "Client part with working modules: “Registration and authorization” and “Group chats” and “News”.<br>Implements the user registration and authorization for chating, including the messenger client part.<br>News from specified sources also available for authorized users.<br>ReactJS implementation.",
+  },
+  {
+    id: 4,
+    name: "site-shop-vue",
+    image: "../assets/portfolio/img/porto-4.jpg",
+    ref: "https://github.com/avbmoons/site-shop-vue",
+    text: "Client block for goods trade.<br>The goods catalog searching, choice for cart and cart totals implements.<br>Also contain the feedback form validated.<br>Vue JS implementation.",
+  },
+  {
+    id: 5,
+    name: "fast-food-shop-js",
+    image: "../assets/portfolio/img/porto-5.jpg",
+    ref: "https://github.com/avbmoons/fast-food-shop-js",
+    text: "Client block for fast-food trade.<br>Main course choice with additional stuffing and seasonings implements, also cart totals counts.<br>JavaScript code implementation.",
+  },
+  {
+    id: 6,
+    name: "site-shop-html",
+    image: "../assets/portfolio/img/porto-6.jpg",
+    ref: "https://github.com/avbmoons/site-shop-html",
+    text: "E-shop site layout for example. Contain some pages as main, catalog, product, cart and user registration.<br>Html with Sass styles implementation.",
+  },
+  {
+    id: 7,
+    name: "site-card-html",
+    image: "../assets/portfolio/img/porto-7.jpg",
+    ref: "https://github.com/avbmoons/site-card-html",
+    text: "Card-site layout for example.<br>Contain the interactive map on Contacts page.<br>Html with Sass styles implementation.",
+  },
+  {
+    id: 8,
+    name: "slider-js",
+    image: "../assets/portfolio/img/porto-8.jpg",
+    ref: "https://github.com/avbmoons/slider-js",
+    text: "Slide block embed to any site with visual pages paginator.<br>JavaScript code implementation.",
+  },
+];

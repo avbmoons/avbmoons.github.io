@@ -1,0 +1,74 @@
+$width-site: 100vw;
+$width-main-section-center: $width-site*0.70;  //0.90
+$height-site: 100vh;
+$height-header: 20vh;
+$height-footer: 20vh;
+$height-main: (($height-site)- ($height-header)- ($height-footer));
+$color-active-icon: #1c7e7e;
+$color-active-link: #965060;
+
+.contacts-list {
+  width: $width-main-section-center*0.87;
+  height: $height-main * 0.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  background-image: url(../../assets/images/bc_contacts.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  .contact-item-block {
+    margin-left: 10%;
+    width: 80%;
+    max-height: 25%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    .contact-item-box {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-sizing: border-box;
+      .contact-item {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        .contact-item-ones {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          box-sizing: border-box;
+          .contact-img {
+            margin-left: 1.76vw;  //20px to 24px
+            height: 90%;
+            z-index: 999;
+          }
+          .contact-link {
+            margin-left: 2.60vh;  //20px
+            height: fit-content;
+            text-decoration: none;
+            font-size: 2.34vh;  //16px to 18px
+            font-style: italic;
+            color: $color-active-icon;
+          }
+          .contact-link:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 912px) {  
+  .contacts-list {
+    width: $width-site*0.9*0.87;
+    background-image: none;
+  }
+}

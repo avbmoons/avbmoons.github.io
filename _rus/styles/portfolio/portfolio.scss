@@ -1,0 +1,103 @@
+$width-site: 100vw;
+$height-block: 95vh;
+$width-slide: 60%;
+$width-main-section-center: $width-site*0.70;  //0.90
+
+.slide-porto-box {
+  margin: 0 auto;
+  width: $width-slide;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  .slide-porto {
+    margin: 0 auto;
+    width: $width-main-section-center*0.6;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    .images-porto {
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
+      transition: 1s;
+      cursor: pointer;
+    }
+    .images-porto:hover {
+      transform: scale(1.2);
+    }
+    .buttons-porto {
+      position: absolute;
+      top: 35%; //30%
+      left: 0;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      .btt-porto {
+        width: 10%;
+        height: auto;
+        text-align: center;
+        background: none;
+        border: none;
+        font-size: 9.38vh;  //72px
+        color: grey;
+        cursor: pointer;
+      }
+      .btt-porto:hover {
+        color: orange;
+      }
+    }
+  }
+}
+.point-porto-box {
+  margin: 2.60vh auto;  //20px auto
+  width: $width-slide;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  .point-porto {
+    margin: 0 auto;
+    font-size: 2.34;  //18px
+    font-weight: 500;
+    color: orangered;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .section-block {
+    width: $width-site;
+    .section-block-left {
+      width: $width-site*0.05;
+    }
+    .section-block-center {
+      width: $width-site*0.90;
+    }
+    .section-block-right {
+      width: $width-site*0.05;
+    }    
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .slide-porto-box {
+    width: 90%;
+    border: 1px solid red;
+    .slide-porto {
+      width: 95%;
+      .buttons-porto {
+        top: 90%;
+      }
+    }
+  }
+  .point-porto-box {
+    width: 90%;
+  }
+}

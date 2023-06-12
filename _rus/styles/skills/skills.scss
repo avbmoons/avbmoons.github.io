@@ -1,0 +1,23 @@
+$width-site: 100vw;
+$width-main-section-center: $width-site*0.70;  //0.90
+
+.section-content-item-skills {
+    margin: 1% 1%;
+    width: $width-main-section-center*0.08;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    .section-content-item-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    .section-content-item-skills {
+      width: $width-main-section-center*0.18; //20%
+    }
+  }
+  
+

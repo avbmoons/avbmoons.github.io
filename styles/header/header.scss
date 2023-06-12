@@ -1,0 +1,233 @@
+$width-site: 100vw;
+$width-header: $width-site;
+$width-header-top-left: $width-site * 0.5;
+$width-header-top-right: $width-site * 0.5;
+$width-header-bottom-left: $width-site * 0.25; //0.15
+$width-header-bottom-center: $width-site * 0.5; //0.7
+$width-header-bottom-right: $width-site * 0.25; //0.15
+$width-menu: $width-site;
+$height-site: 100vh;
+$height-header: 20vh;
+$height-header-top: $height-header * 0.75;
+$height-header-bottom: (($height-header) - ($height-header-top));
+$height-menu: $height-header * 0.25;
+$color-header: #1f1d1d;
+$color-footer: #0f0f0f;
+$color-section: #ededed;
+$color-active-icon: #1c7e7e;
+$color-active-menu: orange;
+$color-text-dark: $color-footer;
+$color-text-light: $color-section;
+$color-text-footer: $color-active-icon;
+$color-link-dark: $color-active-icon;
+$color-link-light: #34e0e0;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+  header {
+    margin: 0 auto;
+    width: $width-header;
+    height: $height-header;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    .header-top {
+      margin: 0 auto;
+      width: $width-header;
+      height: $height-header-top;
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      .header-top-left {
+        margin: 0 auto;
+        width: $width-header-top-left;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        background-color: $color-header;
+        color: white;
+
+        .logo-box {
+          width: 100%;
+          height: 50%;
+          display: flex;
+          justify-content: flex-start;
+          .logo-img {
+            margin-left: 10%;
+          }
+        }
+      }
+      .header-top-right {
+        margin: 0 auto;
+        width: $width-header-top-right;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        background-color: $color-header;
+        color: white;
+
+        .menu-box {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: flex-end;
+          .menu-burger-box {
+            margin-right: 10%; ////
+            display: flex;
+            justify-content: center;
+            .menu-content-box {
+              margin-right: 1.3vh; //
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center; //space-around
+              box-sizing: border-box;
+              .menu-content {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                display: none;
+                .menu-content-item {
+                  margin-right: 1.3vh; //
+                  text-decoration: none;
+                  font-size: 2.34vh; // 16px to 18px
+                  color: $color-text-light;
+                }
+                .menu-content-item:hover {
+                  color: $color-active-menu;
+                }
+              }
+            }
+            .menu-burger {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              box-sizing: border-box;
+              .menu-burger-img {
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+              }
+            }
+            .menu-burger:hover .menu-burger-img {
+              background-color: $color-active-icon;
+            }
+          }
+          .menu-burger-box:hover {
+            background-color: $color-header;
+            .menu-content {
+              display: block;
+            }
+          }
+          .menu-user-box {
+            margin-right: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-sizing: border-box;
+            display: none; ////
+            .menu-user-img {
+              display: flex;
+              justify-content: center;
+              img {
+                //opacity: 0;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+    .header-bottom {
+      margin: 0 auto;
+      width: $width-header;
+      height: $height-header-bottom;
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      background-color: $color-header;
+      color: white;
+      .header-bottom-left {
+        margin: 0 auto;
+        width: $width-header-bottom-left;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        background-color: $color-header;
+        .logo-name-box {
+          display: flex;
+          justify-content: left; //center
+          .logo-name {
+            margin-left: $width-header-top-left * 0.1;
+            text-align: left;
+            font-size: 2.34vh; //16px to 18px
+            color: $color-text-light;
+          }
+        }
+      }
+      .header-bottom-center {
+        width: $width-header-bottom-center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        background-color: $color-header;
+        .logo-prof {
+          text-align: center;
+          font-size: 2.34vh; //16px to 18px
+          color: $color-text-light;
+        }
+      }
+      .header-bottom-right {
+        margin: 0 auto;
+        width: $width-header-bottom-right;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        background-color: $color-header;
+        .lang-box {
+          width: auto; //100%
+          margin-right: $width-header-top-right * 0.1; //20px to 1.46vw
+          display: flex;
+          justify-content: right; //center
+          .lang-name-box {
+            margin-left: 1.46vw;
+            display: flex;
+            justify-content: center;
+            background-color: $color-header;
+            .lang-ref {
+              text-decoration: none;
+              color: $color-text-light;
+              font-size: 2.34vh; //16px to 18px
+            }
+            ._active {
+              color: $color-active-menu;
+            }
+            .lang-ref:hover {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+

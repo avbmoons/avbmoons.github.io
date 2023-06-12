@@ -1,0 +1,18 @@
+.section-content-item-skills {
+  margin: 1% 1%;
+  width: 5.6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.section-content-item-skills .section-content-item-img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 912px) {
+  .section-content-item-skills {
+    width: 12.6vw;
+  }
+}/*# sourceMappingURL=skills.css.map */
