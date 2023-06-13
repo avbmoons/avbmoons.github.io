@@ -84,7 +84,6 @@
 @media screen and (max-width: 912px) {
   .slide-porto-box {
     width: 90%;
-    border: 1px solid red;
   }
   .slide-porto-box .slide-porto {
     width: 95%;
