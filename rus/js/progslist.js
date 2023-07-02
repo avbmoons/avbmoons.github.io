@@ -13,7 +13,7 @@ class ProgsItem {
               </div>
               <div class="item-box-right">
                   <p class="item-title">${this.name}</p>
-                  <a class="item-link" href="${this.ref}">see on GitHub...</a>
+                  <a class="item-link" href="${this.ref}">смотреть на GitHub...</a>
                   <p class="item-description">${this.text}
                   </p>                                    
               </div>                                       
