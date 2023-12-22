@@ -29,12 +29,12 @@ var imgRefs = [];
 var pointNumPorto = []; //
 var pointSlidesPorto = []; //
 
-for (var i = 1; i < 8; i++) {
+for (var i = 1; i <= 10; i++) {
   imgNumPorto.push(i);
   pointNumPorto.push(i); //
 }
 
-for (var j = 0; j < 7; j++) {
+for (var j = 0; j <= 9; j++) {
   imgSlidesPorto.push("porto-" + imgNumPorto[j] + ".jpg");
   imgRefs.push(progs[j].ref);
   pointSlidesPorto.push(point.src); //
