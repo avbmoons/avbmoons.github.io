@@ -8,6 +8,7 @@
 .item-block .photo-box {
   width: 20%;
   height: auto;
+  display: none;
 }
 .item-block .photo-box .photo {
   width: 100%;
