@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Russia">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home-ENG</title>
+    <title>home-РУС</title>
     <link rel="stylesheet" href="styles/home/home.css"> 
-    <script defer src="js/lang.js"></script>      
-    <script defer src="js/theme.js"></script> 
-    <script defer src="js/openModal.js"></script>
+    <script defer src="js/lang.js"></script>
+    <script defer src="js/theme.js"></script>
+    <script defer src="js/openModal.js"></script>    
     <script defer src="js/menu.js"></script>
     <script defer src="js/screenVars.js"></script>
 </head>
@@ -18,10 +18,10 @@
                 <div class="header-block">
                     <div class="header-box">
                         <div class="name-box" id="name">
-                            <a href="index.html" id="eb">Elena Belkina</a>
+                            <a href="index-rus.html" id="eb">Елена Белкина</a>
                         </div>
                         <div class="name-box" id="prof">
-                            <p>Web-development & Design</p>
+                            <p>Веб-разработка & Дизайн</p>
                         </div>
                         <div class="services-box" id="services">
                             <button class="btn-service" id="burger">
@@ -44,8 +44,8 @@
                             <button class="btn-service" id="themeToggle">
                                 <img src="assets/icons/icon-theme2.svg" alt="theme">
                             </button>
-                            <button class="btn-service" id="langEng" >Eng</button>
-                            <button class="btn-service" id="langRus" >Рус</button>
+                            <button class="btn-service" onclick="window.location = 'index.html'" id="langEng" >Eng</button>
+                            <button class="btn-service" onclick="window.location = 'index-rus.html'" id="langRus" >Рус</button>                        
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                                 </clipPath>
                                 </defs>
                                 </svg>
-                             </a>                            
+                             </a>
                         </div>
                     </div>
                     <div class="main-center">
@@ -79,17 +79,17 @@
                                 <div class="selfinfo-block">
                                     <div class="selfinfo-box">
                                         <div class="selfinfo-text-block">
-                                            <p class="selfinfo-p" id="selfinfo-p1">Hi, there! I am Elena,</p>
-                                            <p class="selfinfo-p" id="selfinfo-p2">a web developer, located in Moscow, Russia.</p>
-                                            <p class="selfinfo-p">I’m developing websites and design ones also.</p>
-                                            <p class="selfinfo-p">Making front, back and interactive layouts too.</p>
-                                            <p class="selfinfo-p">Having some personal and common projects and present several one here.</p>
-                                            <p class="selfinfo-p">I'm looking for interesting projects to participate and apply my skills,</p>
-                                            <p class="selfinfo-p" id="selfinfo-p3">as well as learn something new.</p>                                           
+                                            <p class="selfinfo-p" id="selfinfo-p1">Привет! Я Елена,</p>
+                                            <p class="selfinfo-p" id="selfinfo-p2">веб-разработчик. Живу и работаю в Москве.</p>
+                                            <p class="selfinfo-p">Занимаюсь разработкой и дизайном сайтов.</p>
+                                            <p class="selfinfo-p">Делаю фронт, бэк, а также интерактивные макеты.</p>
+                                            <p class="selfinfo-p">У меня есть несколько персональных проектов и групповые разработки.</p>
+                                            <p class="selfinfo-p">Ищу интересные проекты, чтобы поучаствовать и применить свои навыки,</p>
+                                            <p class="selfinfo-p" id="selfinfo-p3">а также узнать что-то новое.</p>                                           
                                         </div>
                                         <div class="selfinfo-btn-block" id="selfinfoBtnBlock">
                                             <div class="selfinfo-btn-box" id="selfinfoBtnBox">
-                                                <button class="btn-more" id="btnMore" onclick="openModal()">Projects</button>
+                                                <button class="btn-more" id="btnMore" onclick="openModal()">Проекты</button>
                                             </div>                                        
                                         </div>
                                     </div>                             
@@ -98,7 +98,7 @@
                             <section id="projects">
                                 <div class="projects-block">
                                     <div class="projects-btn-box">
-                                        <button class="btn-projects" id="btnProjects" onclick="openAbout()">About me&nbsp;&#8594;</button>
+                                        <button class="btn-projects" id="btnProjects" onclick="openAbout()">О себе&nbsp;&#8594;</button>
                                     </div>
                                 </div>
                             </section>                            
@@ -121,7 +121,7 @@
                     </div>                 
                 </div>
                 <div class="modal-block" id="modal">
-                    <div class="modal-center">
+                    <div class="modal-center" id="modalCenter">
                         <div class="btn-box">
                             <button class="btn-close" id="modalClose" onclick="closeModal()">&#10006;</button>                            
                         </div>
@@ -129,14 +129,14 @@
                             <div class="project-item" id="projectNews">
                                 <div class="title-block">
                                     <div class="title-box">
-                                        <a class="project-title-link" href="https://avbmoons.github.io/newsfront/index.html" target="_blank">News parsing project</a>
+                                        <a class="project-title-link" href="https://avbmoons.github.io/newsfront/index.html" target="_blank">Проект новостного сайта</a>
                                     </div>
                                     <div class="text-box">
-                                        <p class="project-text">Parsing news by category from official sources. The front part has been developed in the project. Also the administrator interface has been developed for information management and analysis.</p>
+                                        <p class="project-text">Парсинг новостей по категориям из официальных источников. Разработана фронт-часть проекта. Также для управления сайтом и анализа информации разработан интерфейс администратора.</p>
                                     </div>
                                     <div class="info-box">
                                         <div class="link-box">
-                                           <a class="project-link" href="https://www.figma.com/proto/yB3awVEZfTVkloxj3utdoC/news-app?node-id=1-2&node-type=frame&t=jd6Lj8AzkIaDtq0y-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A41" target="_blank">Design</a> 
+                                           <a class="project-link" href="https://www.figma.com/proto/yB3awVEZfTVkloxj3utdoC/news-app?node-id=1-2&node-type=frame&t=jd6Lj8AzkIaDtq0y-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A41" target="_blank">Дизайн-макет</a> 
                                         </div>
                                         <div class="stack-box">
                                             <p class="project-stack">Html5 Sass JS Laravel</p>
@@ -157,14 +157,14 @@
                             <div class="project-item" id="projectFlowers">
                                 <div class="title-block">
                                     <div class="title-box">
-                                        <a class="project-title-link" href="https://avbmoons.github.io/flowers/" target="_blank">Flowers e-shop project</a>
+                                        <a class="project-title-link" href="https://avbmoons.github.io/flowers/" target="_blank">Проект магазина флористики</a>
                                     </div>
                                     <div class="text-box">
-                                        <p class="project-text">The front part has been developed in the project of the online floristry store. The demo version contains the main pages of the website with the function of creating a shopping cart and an order form.</p>
+                                        <p class="project-text">В проекте интернет-магазина флористики разработана фронт-часть. Демо-версия содержит основные страницы сайта с функцией формирования корзины покупок и формой заказа.</p>
                                     </div>
                                     <div class="info-box">
                                         <div class="link-box">
-                                           <a class="project-link" href="https://www.figma.com/proto/TRDtAc6nWE7RW3hm34NoMK/Flowers?node-id=1-2&starting-point-node-id=1%3A2&t=xioBg3AvqLosdIxf-1" target="_blank">Design</a> 
+                                           <a class="project-link" href="https://www.figma.com/proto/TRDtAc6nWE7RW3hm34NoMK/Flowers?node-id=1-2&starting-point-node-id=1%3A2&t=xioBg3AvqLosdIxf-1" target="_blank">Дизайн-макет</a> 
                                         </div>
                                         <div class="stack-box">
                                             <p class="project-stack">Html5 Sass JS Vuejs</p>
@@ -185,14 +185,14 @@
                             <div class="project-item" id="projectMarket">
                                 <div class="title-block">
                                     <div class="title-box">
-                                        <a class="project-title-link" href="https://avbmoons.github.io/market/index.html" target="_blank">Interior e-shop project</a>
+                                        <a class="project-title-link" href="https://avbmoons.github.io/market/index.html" target="_blank">Проект магазина предметов интерьера</a>
                                     </div>
                                     <div class="text-box">
-                                        <p class="project-text">The front part has been developed in the project of the online store of interior items. The demo version contains the main pages of the website with the function of creating a shopping cart.</p>
+                                        <p class="project-text">В проекте интернет-магазина предметов интерьера разработана фронт-часть. Демо-версия содержит основные страницы сайта с функцией формирования корзины покупок.</p>
                                     </div>
                                     <div class="info-box">
                                         <div class="link-box">
-                                           <a class="project-link" href="https://www.figma.com/proto/mglqzLqrFFLWQ8nHMsGRyb/ihanaa-shop?node-id=4-47&t=gUVZA6vYtYQ0wOsz-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A47" target="_blank">Design</a> 
+                                           <a class="project-link" href="https://www.figma.com/proto/mglqzLqrFFLWQ8nHMsGRyb/ihanaa-shop?node-id=4-47&t=gUVZA6vYtYQ0wOsz-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A47" target="_blank">Дизайн-макет</a> 
                                         </div>
                                         <div class="stack-box">
                                             <p class="project-stack">Html5 Sass JS</p>
@@ -213,14 +213,14 @@
                             <div class="project-item" id="projectDelivery">
                                 <div class="title-block">
                                     <div class="title-box">
-                                        <a class="project-title-link" href="https://avbmoons.github.io/delivery-food/index.html" target="_blank">Food delivery e-shop project</a>
+                                        <a class="project-title-link" href="https://avbmoons.github.io/delivery-food/index.html" target="_blank">Проект магазина доставки еды</a>
                                     </div>
                                     <div class="text-box">
-                                        <p class="project-text">The front-end has been developed in the project of an online food delivery store. The demo version contains the main pages of the website with the function of creating a shopping cart and an order form.</p>
+                                        <p class="project-text">В проекте интернет-магазина доставки еды разработана фронт-часть. Демо-версия содержит основные страницы сайта с функцией формирования корзины покупок и формой заказа.</p>
                                     </div>
                                     <div class="info-box">
                                         <div class="link-box">
-                                           <a class="project-link" href="https://www.figma.com/proto/k6rh33l1DVgymDGGe5lB8U/delivery-food?node-id=1-3&starting-point-node-id=1%3A3&t=Ciro6DpTiBClw5Xq-1" target="_blank">Design</a> 
+                                           <a class="project-link" href="https://www.figma.com/proto/k6rh33l1DVgymDGGe5lB8U/delivery-food?node-id=1-3&starting-point-node-id=1%3A3&t=Ciro6DpTiBClw5Xq-1" target="_blank">Дизайн-макет</a> 
                                         </div>
                                         <div class="stack-box">
                                             <p class="project-stack">Html5 Sass JS</p>
@@ -249,20 +249,20 @@
                         <div class="about-block">
                             <div class="greet-box">
                                 <div class="photo-block">
-                                    <p class="greet-p-media" id="selfinfo-media"><img class="photo" src="assets/images/foto-brush.png" alt="photo">Hi, there! I am Elena, a web developer, located in Moscow, Russia. <br/> I’m developing websites and design ones also. <br/> Making front, back and interactive layouts too. <br/> Having some personal and common projects and present several one here. <br/> I'm looking for interesting projects to participate and apply my skills, <br/> as well as learn something new.</p>
+                                    <p class="greet-p-media" id="selfinfo-media"><img class="photo" src="assets/images/foto-brush.png" alt="photo">Привет! Я Елена, веб-разработчик. Живу и работаю в Москве. <br/> Занимаюсь разработкой и дизайном сайтов. <br/> Делаю фронт, бэк, а также интерактивные макеты. <br/> У меня есть несколько персональных проектов и групповые разработки, по ссылке ниже представляю некоторые из них. <br/> Ищу интересные проекты, чтобы поучаствовать и применить свои навыки, а также узнать что-то новое.</p>
                                 </div>
                             </div>
                             <div class="content-box">
-                                <p class="content-p">I have been working in IT for a long time, engaged in business and system analysis, I have designed systems, modules, websites. Now I'm designing, creating design layouts and implementing them in code.</p>
-                                <p class="content-p">I write native Html layout and JS scripts, I prefer Sass for developing styles. I work with VueJS and ReactJS projects. I prefer to develop the backend in Laravel with MySQL and Postgresql databases. I can also work with native PHP. I work in Docker and Ubuntu. I use Figma to create design layouts.</p>
-                                <p class="content-p">I can also organize project work for a small group in Trello, YouGile, Jira, maintain a common repository on GitHub, present projects and project results.</p>
-                                <p class="content-p">I'm trying to develop my skills and looking for projects where I can be useful and apply my experience.</p>
-                                <p class="content-p last">You can view several of my personal projects at the link below. Demo versions of resources are presented.</p>
+                                <p class="content-p">В ИТ работаю давно, занималась бизнес- и системным анализом, проектировала системы, модули, сайты. Сейчас проектирую, создаю дизайн макеты и реализую в коде.</p>
+                                <p class="content-p">Пишу нативную Html верстку и JS скрипты, для разработки стилей предпочитаю Sass. Работаю с VueJS и ReactJS проектами. Бэкенд предпочитаю разрабатывать в Laravel с базами данных MySql и PostreSql. Также могу работать с нативным PHP. Работаю в Docker и Ubuntu. Для создания дизайн-макетов использую Figma.</p>
+                                <p class="content-p">Также я могу организовать проектную работу для небольшой группы в Trello, YouGile, Jira, вести общий репозиторий в GitHub, презентовать проекты и итоги проектов.</p>
+                                <p class="content-p">Я стараюсь развивать свои навыки и ищу проекты, в которых смогу быть полезной и применить свой опыт.</p>
+                                <p class="content-p last">Несколько моих персональных проектов вы можете посмотреть по ссылке ниже. Представлены демо версии ресурсов.</p>
                             </div>
                             <div class="projects-btn-box">
-                                <button class="btn-projects" id="btnProjectsAbout" onclick="openModal()">Projects</button>
+                                <button class="btn-projects" id="btnProjectsAbout" onclick="openModal()">Проекты</button>
                                  <div class="btn-get-file">
-                                   <a class="link-get-file" href="assets/files/cv-eng.pdf" download="" target="_blank">Get my CV</a> 
+                                   <a class="link-get-file" href="assets/files/cv-rus.pdf" download="" target="_blank">Скачать резюме</a> 
                                  </div>                                
                             </div>
                         </div>
@@ -273,7 +273,7 @@
         <footer>
             <div class="footer-block">
                 <div class="footer-box" id="contacts">
-                    <p>&copy; Elena Belkina. 2025. All rights reserved</p>
+                    <p>&copy; Елена Белкина. 2025. Все права защищены.</p>
                 </div>
             </div>
         </footer>
